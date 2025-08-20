@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Gwendolyn:wght@400;700&family=VT323&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    height: 50vw;
+    background-image: url(imagenes/foto-cielo3.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.header-content{
+    display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+.header-content p{
+    font-family: 'DM', serif;
+    font-size: 3vmin;
+    color: #f0efe7;
+
+}
+
+.header-content .p2{
+    border-bottom: 1px solid #302f2f;
+}
+
+.header-content h1{
+    font-family: 'DM', serif;
+    color: #f0efe7;
+    text-align: center;
+    font-size: 7vmin;
+    margin-bottom: 20px;
+}
+
+
+a.ctn{
+   display:inline-block;
+   padding: 0.3em 1.2em;
+   margin: 15px;
+   border: solid #8a9ace;
+   border-radius: 2em;
+   box-sizing: border-box;
+   text-decoration: none;
+   color: #242222;
+   text-shadow: 0 0.04em 0.04em rgba(54, 52, 52, 0.35);
+   transition: all 0.2s;  
+}
+
+a.ctn:hover{
+  border-color: #384a83;
+}
+
+
+.descripcionWeb{
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color:#f0efe7;
+    text-align: center;
+    font-size: 4vmin;
+    color: #030303;
+}
+
+.descripcionWeb h1{
+    font-family: 'DM', serif;
+     font-size: 7vmin;
+     margin-bottom: 20px;
+}
+
+.descripcionWeb p{
+    font-size: 3vmin;
+}
+
+
+
+
+.product{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(34, 38, 94);
+    font-family: 'DM', serif;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product-category{
+    color: aliceblue;
+    font-size: 6.4vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.carousel-wrapper {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  padding: 0 10vw;
+}
+
+.product-container{
+     display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+gap: 40px;}
+
+.product-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.product-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 350px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: azure;
+    border: 2px solid white;
+  
+}
+
+.product-img{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-link{
+    border-radius: 20px;
+}
+
+.btnNext, .btnPrev{
+   border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    z-index: 10;
+   
+}
+
+
+
+.colleciton-container{
+width: 100%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 10px;
+}
+
+
+.row{
+    width: 100vw;
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.side{
+    flex:30%;
+    background-color: rgb(44, 40, 99);
+    padding: 70px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+
+.side p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 3vmin;
+    color: rgb(228, 228, 222);
+}
+
+.sideSpotify{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 30%;
+  background-color: rgb(44, 40, 99);
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+            .row {
+                flex-direction: column; 
+            }
+            
+            .side, .main {
+                flex-basis: 100%; 
+                min-width: auto;
+            }
+        }
+
+iframe{
+    width: 70%;
+    height: 380px;
+
+}
+
+
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: #3a3a3a;
+     padding: 21px;
+}
+
+.containerF{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerF h3{
+    font-size: 2vmin;
+    font-weight: 100;
+    margin-top: 15px;
+    color: #f0efe7;
+}
+
+.containerF  a{
+    text-decoration: none;
+    margin-top: 5px;
+ color: #f0efe7;
+ font-size: 25px;
+
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1vh;
+    font-weight: 100;
+    margin-top: 10px;
+    color: #f0efe7;
+}
+
+
+
+
+
+
+/*.txt_spotify p{
+   font-family: "VT323", monospace;
+    font-style: normal;
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.spotify iframe{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: auto;
+    margin-left: 10%;
+    border-radius:12px
+    
+}*/
