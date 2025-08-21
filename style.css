@@ -121,6 +121,49 @@ ul{
     font-weight: 400;
 }
 
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    font-size: 30px;
+}
+
+/*Navbar responsive*/
+@media (max-width:910px){
+    nav .nav-links{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #384a83;
+        overflow: hidden;
+    }
+    nav .nav-links li{
+        padding: 20px;
+    }
+    h1 .tittle .hangul{
+        font-size: 0.8vmin;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuLinks{
+        transition: all 0.5s;
+    }
+}
+/*h1 navbar*/
+@media (max-width: 1000px) {
+  h1{
+    font-size: 1.2rem; 
+  }
+  .nav-links li a{
+    font-size: 1rem ;
+  }
+}
+
 /*About*/
 
 .descripcionWeb{
