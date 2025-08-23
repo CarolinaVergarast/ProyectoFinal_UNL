@@ -6,12 +6,15 @@
     box-sizing: border-box;
 }
 
-body{
-     width: 100%;
+html, body{
+    width: 100%;
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #f0efe7;
 }
 
 /*Header*/
@@ -81,9 +84,6 @@ a.ctn:hover{
 
 nav{
     display: flex;
-    position: absolute;
-    top: 0%;
-    left: 0%;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -106,27 +106,26 @@ ul{
 
 .nav-links a{
     font-size: 2.2vmin;
-    text-decoration: none;
     color: #030303;
     font-family: 'Epilogue',sans-serif;
     transition: 0.02s ease;
 }
 
 .nav-links a:hover{
-    color: #f7f6f4;
+    color:#22265e ;
 }
 
 
 .title {
     font-family: 'Gloock', serif;
     font-weight: 400;
-    color: #f0efe7;
+    color: #030303;
 }
 
 .hangul {
     font-family: 'Nanum Gothic', serif;
     font-style: italic;
-    color: #f0efe7;
+    color: #030303;
     font-weight: 400;
 }
 
@@ -147,7 +146,7 @@ ul{
         right: 0;
         flex-direction: column;
         text-align: center;
-        background: #384a83;
+        background: #b8b7b1;
         overflow: hidden;
     }
     nav .nav-links li{
@@ -170,6 +169,7 @@ ul{
   }
   .nav-links li a{
     font-size: 1rem ;
+    color: #222222;
   }
 }
 
@@ -208,14 +208,15 @@ ul{
 .product{
    /* width:100%; */
     height: 70vh;
-    background-color: #22265e;
+    background: #262335;
+    background: linear-gradient(0deg,#262335 0%, #22265e 44%);
     font-family: 'Gloock', serif;
     position: relative;
     overflow: hidden;
     padding: 20px;
 }
 
-.product-category{
+.title-profiles{
     color: aliceblue;
     font-size: 6.4vmin;
     display: flex;
@@ -250,15 +251,17 @@ gap: 40px;}
     height: 350px;
     padding: 15px;
     border-radius: 20px;
-    background-color: azure;
-    border: 2px solid white;
-  
+    background-color: #ffffff;
 }
 
 .product-img{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+}
+
+.product-card a:hover {
+  text-decoration: none;
 }
 
 .card-link{
@@ -278,6 +281,14 @@ gap: 40px;}
 }
 
 
+.product-img .name_profile, a{
+    text-decoration: none;
+    color: #030303;
+    font-size: 2.5vmin;
+    text-align: center;
+    padding-top: 5px;
+}
+
 
 .colleciton-container{
 width: 100%;
@@ -288,13 +299,26 @@ grid-gap: 10px;
 
 }
 
+@media (max-width: 768px) {
+    .product-card {
+        width: 180px;
+        height: 250px; 
+    }
+
+    .carousel-wrapper {
+        padding: 0 10px; 
+        gap: 20px; 
+    }
+}
+
 /*Playlist Spotify player*/
 .row{
     /*width: 100vw;*/
+    min-height: 45vw;
     display: flex;
   flex-wrap: wrap;
-  /*background-color: #2c2863;*/
-  background-image: url(imagenes/foto-cielo3.png);
+  background-color: #262335;
+
 }
 
 .side, .sideSpotify{
@@ -309,7 +333,7 @@ grid-gap: 10px;
     font-family: 'Epilogue', sans-serif;
     font-size: 4vmin;
     font-weight: 400;
-    color: #030303;;
+    color: #f0efe7;
     text-align: center;
 }
 
@@ -331,6 +355,9 @@ iframe{
                 min-width: auto;
                 
             }
+            .side p{
+                font-size: 6vmin;
+            }
         }
 
 
@@ -339,7 +366,7 @@ iframe{
 
 footer{
    /* width: 100%;*/
-    height: 15vh;
+    min-height: 15vh;
     background-color: #272727;
      padding: 21px;
 }
@@ -352,7 +379,8 @@ footer{
 }
 
 .containerF h3{
-    font-size: 2vmin;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.2rem;
     font-weight: 100;
     margin-top: 15px;
     color: #f0efe7;
@@ -375,9 +403,57 @@ footer p{
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1vh;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 0.8rem;
     font-weight: 100;
     margin-top: 10px;
     color: #f0efe7;
+}
+
+/*Media query moviles pequeños*/
+@media (max-width: 400px) {
+    header{
+        height: 85vh;
+    }
+    .descripcionWeb{
+        height: 80vh;
+    }
+    .descripcionWeb p{
+        font-size: 5vmin;
+    }
+ .descripcionWeb, .product, .row {
+        padding: 10px;
+    }
+    .header-content h1 {
+        font-size: 7vmin; 
+    }
+    .header-content p {
+        font-size: 4vmin; 
+    }
+    .title-profiles{
+        font-size:10vmin ;
+    }
+    .product-card {
+        width: 150px;
+        height: 220px; 
+    }
+     footer {
+        padding: 10px; 
+    }
+
+    .containerF h3 {
+        font-size: 0.7rem; 
+    }
+
+    .containerF a {
+        font-size: 18px; 
+    }
+
+    footer p {
+        font-size: 0.7rem; /
+    }
+    .product-container .product-card .product-img .name_profile{
+        font-size: 4vmin;
+    }
 }
 
