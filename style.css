@@ -46,7 +46,7 @@ a{
     font-family: 'DM sans serif', serif;
     font-weight: 100;
     font-size: 3vmin;
-    color: #f0efe7;
+    color: #f0f8ff;
 
 }
 
@@ -169,7 +169,7 @@ ul{
   }
   .nav-links li a{
     font-size: 1rem ;
-    color: #222222;
+    color: #030303;
   }
 }
 
@@ -190,6 +190,7 @@ ul{
     font-size: 4vmin;
     color: #030303;
 }
+
 
 .descripcionWeb h1{
     font-family: 'Gloock', serif;
@@ -217,7 +218,7 @@ ul{
 }
 
 .title-profiles{
-    color: aliceblue;
+    color: #f0f8ff;
     font-size: 6.4vmin;
     display: flex;
     justify-content: center;
@@ -333,7 +334,7 @@ grid-gap: 10px;
     font-family: 'Epilogue', sans-serif;
     font-size: 4vmin;
     font-weight: 400;
-    color: #f0efe7;
+    color: #f0f8ff;
     text-align: center;
 }
 
@@ -383,7 +384,7 @@ footer{
     font-size: 1.2rem;
     font-weight: 100;
     margin-top: 15px;
-    color: #f0efe7;
+    color: #f0f8ff;
 }
 
 .containerF  a{
@@ -407,7 +408,7 @@ footer p{
     font-size: 0.8rem;
     font-weight: 100;
     margin-top: 10px;
-    color: #f0efe7;
+    color: #f0f8ff;
 }
 
 /*Media query moviles pequeños*/
