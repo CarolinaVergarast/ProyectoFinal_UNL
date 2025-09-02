@@ -291,14 +291,8 @@ gap: 40px;}
 }
 
 
-.colleciton-container{
-width: 100%;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-gap: 10px;
 
 
-}
 
 @media (max-width: 768px) {
     .product-card {
